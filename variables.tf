@@ -5,6 +5,11 @@ variable "rds_storage" {
   default = "20"
 }
 
+variable "rds_password_length" {
+  type    = number
+  default = "16"
+}
+
 variable "rds_storage_type" {
   type    = string
   default = "gp2"
