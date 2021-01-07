@@ -53,3 +53,8 @@ variable "storage_encrypted" {
   type    = bool
   default = false
 }
+
+variable "skip_final_snapshot" {
+  type    = bool
+  default = false
+}

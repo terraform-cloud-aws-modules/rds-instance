@@ -26,5 +26,6 @@ resource "aws_db_instance" "default" {
   parameter_group_name    = var.rds_parameter_group
   kms_key_id              = var.kms_key_arn
   storage_encrypted       = var.storage_encrypted
+  skip_final_snapshot     = var.skip_final_snapshot
   tags                    = var.tags
 }
