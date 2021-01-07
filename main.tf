@@ -25,5 +25,6 @@ resource "aws_db_instance" "default" {
   password                = random_password.rds_password.result
   parameter_group_name    = var.rds_parameter_group
   kms_key_id              = var.kms_key_arn
+  storage_encrypted       = var.storage_encrypted
   tags                    = var.tags
 }

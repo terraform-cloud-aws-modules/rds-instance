@@ -48,3 +48,8 @@ variable "rds_parameter_group" {
 variable "kms_key_arn" {
   type    = string
 }
+
+variable "storage_encrypted" {
+  type    = bool
+  default = false
+}
