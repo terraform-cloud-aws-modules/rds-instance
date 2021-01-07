@@ -24,5 +24,6 @@ resource "aws_db_instance" "default" {
   username                = var.rds_instance_user
   password                = random_password.rds_password.result
   parameter_group_name    = var.rds_parameter_group
+  kms_key_id              = var.kms_key_id
   tags                    = var.tags
 }
