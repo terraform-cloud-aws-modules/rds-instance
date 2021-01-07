@@ -21,6 +21,7 @@ resource "aws_db_instance" "default" {
   engine_version          = var.rds_engine_version
   instance_class          = var.rds_instance_class
   name                    = var.rds_instance_name
+  identifier              = var.rds_instance_identifier
   username                = var.rds_instance_user
   password                = random_password.rds_password.result
   parameter_group_name    = var.rds_parameter_group

@@ -58,3 +58,8 @@ variable "skip_final_snapshot" {
   type    = bool
   default = false
 }
+
+variable "rds_instance_identifier" {
+  type    = string
+  default = "test"
+}
