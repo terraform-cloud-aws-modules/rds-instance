@@ -45,6 +45,6 @@ variable "rds_parameter_group" {
   default = "default.mysql5.7"
 }
 
-variable "kms_key_id" {
+variable "kms_key_arn" {
   type    = string
 }
